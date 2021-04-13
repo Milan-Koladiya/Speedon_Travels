@@ -228,8 +228,6 @@
 							<ul>
 								<li><a href="#" class="facebook"> </a></li>
 								<li><a href="#" class="facebook twitter"> </a></li>
-								<li><a href="#" class="facebook chrome"> </a></li>
-								<li><a href="#" class="facebook dribbble"> </a></li>
 							</ul>
 						</div>
 					</div>

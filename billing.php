@@ -64,26 +64,15 @@ session_start();
 				
 		</div>
 	</div>
-				
-
-
-
 				<?php
 
 						session_start();
 						include("db.php");
 							$seatno=$_POST['seat'];
                             $cust_id=$_POST['cust_id'];
-                            $bus_id=$_POST['bus_id'];	
-
-
-
-
+                            $bus_id=$_POST['bus_id'];
 						$from=$_SESSION['source'];
 						$to=$_SESSION['destination'];
-					
-					
-					
 						$query="select * from city_master where city=('".$from."')";
 						$result=mysqli_query($con,$query);
 						
@@ -106,12 +95,9 @@ session_start();
 					<form method="post" action="billing_proccess.php">
 
 	<div class="footer">
-		
 		<div class="container">
 			<div class="footer-top-grids">
 				<div class="footer-grids">
-					
-					
 					<h3><font color="blue">Select PickupPoint:</font></h3>
 					<table>
 						<tr>
@@ -123,40 +109,22 @@ session_start();
 											for($i=0;$i<$n;$i++)
 											{
 												$rows = mysqli_fetch_row($re);
-												?>
-
-														
-																
-																<option><?php echo $rows[1];?></option>
-																
-																
-													
-									
-											
+												<option><?php echo $rows[1];?></option>
 									<?php
 											}
 										}
 								?>	
-							</select>
-							
-											
+							</select>			
 						</tr>
 						</table>
 					<div class="clearfix"> </div>
 				<hr>
-					
 	<?php
-
 						$se="SELECT * from pickup_point_master where city_id=('".$desti_id."')";
 						$resu=mysqli_query($con,$se);
-						
 						?>
-
-
-					
 					<h3><font color="blue">Select DropPoint:</font></h3>
 					<table>
-						
 						<tr>
 							<select name="drop" style="width: 50%; text-align: center; font-size: 20px;">
 								<?php
@@ -167,8 +135,6 @@ session_start();
 										{
 											$rowses = mysqli_fetch_row($resu);
 											?>
-
-													
 																<option><?php echo $rowses[1];?></option>
 											<?php
 										}
@@ -176,9 +142,6 @@ session_start();
 
 								?>	
 						</select>
-
-												
-											
 											</tr>
 										</table>
 										<center>
@@ -194,19 +157,14 @@ session_start();
 
 		</div>
 		</div>
-
 		<div style="margin-left: 45%;">
 			<input type="hidden" name="bus_id" value="<?php echo $bus_id; ?>">
 			<input type="hidden" name="seat" value="<?php echo $seatno; ?>">
 			<input type="hidden" name="cust_id" value="<?php echo $cust_id; ?>">
-
 		
 		</div>
 
 </form>
-	
-		
-
 	<div class="footer">
 		
 		<div class="container">
@@ -245,30 +203,14 @@ session_start();
 		</div>
 		
 	</div>
-
-
-
 	<!-- //footer -->
 	
 	<script defer src="js/jquery.flexslider.js"></script>
 	<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
 	<script src="js/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
-
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
 <?php 
 
     }
