@@ -4,8 +4,6 @@ session_start();
  {
     if($_SESSION['role']!="customer")
     {
-    
-
          header('location:index.php');
    	}
     else
@@ -76,12 +74,7 @@ session_start();
 						
 					</ul>
 				</div>
-					
-					
-							
 						<!-- /script-for-menu -->
-			
-				
 				<div class="clearfix"> </div>
 			</div>
 		</div>
@@ -184,12 +177,11 @@ session_start();
 
     }
 }
-
  else
     {
     	echo "<script type= \"text/javascript\">
-										alert(\"Login please...\");
-										window.location=(\"index.php\")</script>";
+		alert(\"Login please...\");
+		window.location=(\"index.php\")</script>";
     	
     }
  ?>
