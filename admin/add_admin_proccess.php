@@ -35,7 +35,7 @@ require("db.php");
 	        $output = array();
 
 	        $target_path = $target_path . $newfilename;
-	        if ($_FILES["file"]["size"] > 500000) {
+	        if ($_FILES["file"]["size"] > 10000) {
 	            $_SESSION["Dmail"]="Image Size";
 	   			header('Location:add_admin.php');
 	        }else{
