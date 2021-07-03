@@ -82,45 +82,6 @@
                        
 
                     </ul>
-                    <!-- ============================================================== -->
-                    <!-- User profile and search -->
-                    <!-- ============================================================== -->
-                    <ul class="navbar-nav my-lg-0">
-                        <!-- ============================================================== -->
-                        <!-- Search -->
-                        <!-- ============================================================== -->
-                        
-                        <!-- ============================================================== -->
-                        <!-- Language -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="flag-icon flag-icon-in"></i></a>
-                           
-                        </li>
-                        <!-- ============================================================== -->
-                        <!-- Profile -->
-                        <!-- ============================================================== -->
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="admin_static/images/users/profile.png" alt="user" class="profile-pic" /></a>
-                            <div class="dropdown-menu dropdown-menu-right scale-up">
-                                <ul class="dropdown-user">
-                                    <li>
-                                        <div class="dw-user-box">
-                                            <div class="u-img"><img src="admin_static/images/users/profile.png" alt="user"></div>
-                                            <div class="u-text">
-                                                <h4><?php print_r($_SESSION['name']); ?></h4>
-                                                <p class="text-muted"><?php print_r($_SESSION['email']); ?></p><a href="#" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
-                                        </div>
-                                    </li>
-                                    <li role="separator" class="divider"></li>
-                                   
-                                    <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="logout.php"><i class="fa fa-power-off"></i> Logout</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
                 </div>
             </nav>
         </header>
